@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,500;1,300;1,400&family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>University web design</title>
+</head>
+<body>
+    
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><span>E-learning</span></a>
+            <div class="nav-links" id="navLinks">
+                <span class="hide" onclick="hideMenu()">close</span>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURCE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <span class="hide" onclick="showMenu()"><img src="img/menu.png" alt=""></span>
+        </nav>
+        
+        <h1>Contact Us</h1>
+
+    </section>
+
+
+    <!-- contact us -->
+
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29122.429336413188!2d83.78227587873641!3d24.161080757206072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398c0e4d8a595e0d%3A0x1353e3f74842e177!2sGarhwa%2C%20Jharkhand%20822114!5e0!3m2!1sen!2sin!4v1643614073274!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+
+
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fas fa-home"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Garhwa, Jharkhand, INDIA</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-phone-alt"></i>
+                    <span>
+                        <h5>1800 xxxx xxxx</h5>
+                        <p>Monday to saturday, 10AM to pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="far fa-envelope"></i>
+                    <span>
+                        <h5>prashant@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+
+                <form action=""  method="post">
+                   <input type="text" name="name" placeholder="Enter Your Name" required> 
+                   <input type="email" name="email" placeholder="Enter Your Email Address" required> 
+                   <input type="text" name="subject" placeholder="Enter Your subject" required> 
+                   <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                   <button type="submit" class="hero-btn redbtn">Send Message</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+    
+
+
+    <!-- footer -->
+
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, minima consequuntur! Ea maxime ad commodi modi <br> nemo autem quia placeat dolores mollitia quibusdam. Nostrum iste porro excepturi mollitia veritatis <br> sapiente quae accusantium neque ratione, nesciunt deleniti distinctio, consequuntur, voluptatibus possimus?</p>
+        <div class="icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> Prashant kumar</p>
+    </section>
+
+
+
+
+
+
+
+    <!-- javasript for togglemenu -->
+    <script>
+
+      var navLinks= document.getElementById("navLinks");
+
+      function showMenu(){
+        navLinks.style.right="0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right="-200px";
+      }
+
+    </script>
+
+</body>
+</html>
